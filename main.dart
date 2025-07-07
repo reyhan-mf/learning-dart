@@ -4,7 +4,12 @@ void main(List<String> args) {
     return;
   }
 
+var data;
+
   for (var arg in args) {
-    print('Argument: $arg');
+    data = arg;
   }
+print('Data received: $data');
+
+
 }

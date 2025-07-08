@@ -1,15 +1,16 @@
+
+class Mobil {
+  String merek;
+  String model;
+  int tahunProduksi;
+  
+  Mobil(this.merek, this.model, this.tahunProduksi);
+
+  void melaju(){
+    print("Mobil $merek, tahun $tahunProduksi, model $model sedang melaju.");
+  }
+}
 void main(List<String> args) {
-  if (args.isEmpty) {
-    print('No arguments provided.');
-    return;
-  }
-
-var data;
-
-  for (var arg in args) {
-    data = arg;
-  }
-print('Data received: $data');
-
-
+  Mobil mobil1 = Mobil("Toyota", "Avanza", 2020);
+  mobil1.melaju();
 }
